@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1a1a1a;
+	color: #fff;
+	user-select: none;
+}
+
+input {
+	background-color: #292929;
+	border-radius: 8px;
+	border: 0;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Ubuntu";
+	margin: 10px 0;
+	color: #fff;
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	color: #FDFDFD;
+	background-color: #AC485A;
+	border-radius: 8px;
+	border: 0;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Ubuntu";
+}
+
+button:hover {
+	background-color: #6c2a36;
+	transition: .5s linear;
+	cursor: pointer;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 320px;
+	margin: 30px auto;
+}
+
+img {
+	max-width: 60vw;
+	min-width: 30vw;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+ul li {
+	font-size: 20px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	text-align: center;
+	padding: 15px;
+	flex-grow: 1;
+	background-color: #292929;
+}
+
+ul li p {
+	background: linear-gradient(
+		90deg,
+		#6b01d5,
+		#f28c28,
+		#6b01d5
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	background-size: 200%;
+	animation: move-bg 1.5s linear infinite;
+}
+
+ul li:hover {
+	background-color: #efccac;
+	transition: .5s linear;
+	cursor: pointer;
+}
+
+@keyframes move-bg {
+	from {
+		background-position: 0% center;
+	}
+
+	to {
+		background-position: -200% center;
+	}
+}
